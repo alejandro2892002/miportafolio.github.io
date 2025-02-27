@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de desarrollo web de [Tu Nombre]. Conoce mis proyectos, servicios y cómo puedo ayudarte a crear soluciones digitales a tu medida.">
+  <meta name="author" content="[Tu Nombre]">
+  <title>Portafolio - Alejandro Fuentes | Desarrollador Web</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="canonical" href="https://tusitio.com/">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="#">Portafolio</a></div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </header>
+
+  <main>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+      <h1>¡Hola! Soy Alejandro</h1>
+      <p>Desarrollador web e ingeniero en sistemas. Transformo ideas en soluciones digitales que hacen crecer tu negocio.</p>
+      <a href="https://wa.me/525636312119" class="btn-cta">¡Contáctame!</a>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="contenido-sobre-mi">
+        <img src="img/perfil.webp" alt="Foto de [Tu Nombre]">
+        <p>Soy desarrollador web e ingeniero en sistemas, especializado en soluciones digitales utilizando HTML, CSS, JavaScript y PHP. Mi enfoque es crear proyectos personalizados que mejoren la presencia online de tu negocio, adaptándome rápidamente a nuevas tecnologías y lenguajes de programación. Mi experiencia y formación me permiten adaptarme fácilmente a otros lenguajes cuando es necesario. 🚀</p>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos">
+      <h2>Mis Proyectos</h2>
+      <div class="grid-proyectos">
+        <article class="proyecto">
+          <img src="img/restaurante.png" alt="Proyecto de restaurante en línea">
+          <h3>Sistema de Pedidos para Restaurante</h3> 
+          <p>Permite a los clientes ver el menú mediante un código QR, realizar su pedido y enviarlo por WhatsApp al mesero. El administrador puede actualizar el menú fácilmente.</p>
+          <a href="https://alejandro2892002.github.io/" class="btn-ver">Ver Proyecto</a>
+        </article>
+        <article class="proyecto">
+          <img src="img/web.png" alt="Proyecto de portafolio responsive">
+          <h3>Sitios web dinamicos</h3>
+          <p>Sitio web adaptable a dispositivos móviles y otros, ideal para mostrar a todo el publico tu negocio, tus productos o trabajos creativos con llamados a la accion e interaccion con tus visitantes.</p>
+          <a href="https://alejandro2892002.github.io/consultorio-dental.github.io/" class="btn-ver">Ver Proyecto</a>
+        </article>
+        <article class="proyecto">
+          <img src="img/pos.png" alt="Proyecto de portafolio responsive">
+          <h3>Punto de Venta</h3>
+          <p>Permite al usuario tener un excelente control de su negocio con un reporte de ventas completo, un historial de todas sus ventas con fecha y hora exacta, un punto de venta listo para realizar sus actividades diarias</p>
+          <a href="https://updatesys.infy.uk/menu.php" class="btn-ver">Ver Proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <ul class="lista-servicios">
+        <li>✅ Desarrollo de páginas web personalizadas</li>
+        <li>✅ Diseño de menús digitales</li>
+        <li>✅ Sistema de pedidos para restaurantes</li>
+        <li>✅ Paginas web para consultorios y negocios</li>
+        <li>✅ Optimizacion de sitios para SEO</li>
+        <li>✅ Puntos de venta web</li>
+        <li>✅ Mantenimiento y actualización de sitios web</li>
+        <li>✅ Optimizacion para dispositivos móviles</li>
+        <li>✅ Paginas web estáticas y dinámicas</li>
+      </ul>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contáctame</h2>
+      <p>¿Tienes un proyecto en mente? Estoy listo para ayudarte.</p>
+      <a href="https://wa.me/525636312119" class="btn-cta">Escríbeme</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alejandro Fuentes. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Datos estructurados para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Tu Nombre]",
+    "jobTitle": "Desarrollador Web",
+    "url": "https://tusitio.com",
+    "email": "mailto:tuemail@ejemplo.com",
+    "sameAs": [
+      "https://linkedin.com/in/tuusuario",
+      "https://github.com/tuusuario"
+    ]
+  }
+  </script>
+
+  /* JavaScript necesario para abrir/cerrar menú */
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-link');
+  
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+  
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          if (navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+          }
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
